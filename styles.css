@@ -17,7 +17,7 @@
     --light-gray: #808080;
     --dark-bg: #222222;
     --light-bg: #333333;
-    --yellow: #bac964;
+    --yellow: #2bc9de;
     --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   }
   
@@ -269,9 +269,64 @@
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
     line-height: 1.5;
+    text-align: justify;
     text-transform: none;
   }
+
+  .about .box-container .box .company {
+    /* color: var(--dark-gray); */
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    color:var(--dark-gray);
+    text-decoration-line:underline;
+    text-transform: capitalize;
+    transform: translateY(100%);
+  }
+
+  .about .box-container .box .company:hover {
+    color:var(--yellow);
+    text-decoration-line:underline;
+    text-transform: capitalize;
+    transform: scale(1.2);
+    transform: translateY(0);
+  }
+
   /* about */
+  
+/* Adding self style for experience start */
+.experience1 .box-container .box .image {
+  height: 100%;
+  overflow: hidden;
+}
+
+.experience1 .box-container .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience1 .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 4rem;
+}
+
+.experience1 .box-container .box p {
+  color: var(--dark-gray);
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  list-style-type: circle;
+  display: list-item;
+  list-style-type: circle(var(--yellow));
+  text-align: justify;
+  text-transform: none;
+}
+
+/* Adding self style for experience ends */
 
   /* clients */
 .clients .box-container .box .image {
@@ -555,6 +610,7 @@
       font-size: 6rem;
     }
   }
+
   /* media queries */
 
   .heading {
